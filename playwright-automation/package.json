@@ -1,0 +1,20 @@
+{
+  "name": "qa-excellence-final-assessment",
+  "version": "1.0.0",
+  "description": "Playwright POM automation — SauceDemo exercise + Polymer Shop Final Assessment",
+  "scripts": {
+    "test": "npx playwright test --reporter=html,list",
+    "test:saucedemo": "npx playwright test --project=saucedemo --reporter=html,list",
+    "test:shop": "npx playwright test tests/shop/ --project=shop --reporter=html,list",
+    "test:sanity": "npx playwright test tests/shop/sanity.spec.ts --project=shop --reporter=list",
+    "test:regression": "npx playwright test tests/shop/regression.spec.ts --project=shop --reporter=list",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "Abhi",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^26.0.0"
+  }
+}
